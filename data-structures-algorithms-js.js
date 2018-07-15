@@ -1,6 +1,6 @@
 // Data Structures & Algorithms JavaScript
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
-// ◼			ARRAY			   ◼
+// ARRAY
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 // Insert Head	O(n)
 // Insert Index	O(n)
