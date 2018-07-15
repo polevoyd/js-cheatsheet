@@ -119,3 +119,4 @@ for (var [key, value] of myMap.entries()) { console.log(key + ' = ' + value); } 
 myMap.forEach(function(value, key) { console.log(key + ' = ' + value); }); // "0 = zero" // "1 = one"
 
 // Extra
+let exist = myMap.has(key);
