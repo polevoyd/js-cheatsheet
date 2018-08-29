@@ -35,6 +35,7 @@ let subAr = a.slice(0, 3);
 let subst = a.splice(index, amountOfElements, whatToPutInstead);
 let temp = a.slice();
 
+// [1, 2, 3, 4, 5]
 a.reverse();
 a.sort();
 a.join(); // -> 1,2,3,4,5
