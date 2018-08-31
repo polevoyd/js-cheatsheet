@@ -1,3 +1,3 @@
 # js-cheatsheet
 //
-Arrays , Maps
+Arrays , Maps, Stacks, 
