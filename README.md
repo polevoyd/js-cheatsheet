@@ -1,3 +1,3 @@
 # js-cheatsheet
 //
-Arrays , Maps, Stacks, Queues, 
+Arrays , Maps, Stacks, Queues, Priority Queues
