@@ -5,4 +5,6 @@ Maps,
 Stacks, 
 Queues, 
 Priority Queues, 
-Binarytree,
+Binary tree,
+
+etc
