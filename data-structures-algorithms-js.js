@@ -56,6 +56,20 @@ a.forEach(function(item, index, array){
 
 a.forEach(element => console.log(element)); // print each element
 
+// STRING
+let s = 'Very cool string';
+
+// Slice O(N) (end-start)
+s.slice(2);	// 'ry cool string'
+s.slice(2, 7);	// 'ry co'
+
+// Split
+
+
+
+
+
+
 // MAP
 // execute on each element and return new array
 a = a.map(function(num){
