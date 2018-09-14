@@ -32,7 +32,7 @@ let removeTail = a.pop();
 // Extra
 let pos = a.indexOf(value);
 let subAr = a.slice(0, 3);
-let subst = a.splice(index, amountOfElements, whatToPutInstead);
+let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp = a.slice();
 
 // [1, 2, 3, 4, 5]
@@ -41,6 +41,7 @@ a.sort();
 a.join(); // -> 1,2,3,4,5
 a.join(''); // -> 12345
 a.join('-'); // -> 1-2-3-4-5
+s.splice(startingIndex, amountToRemove, whatToPutInstead);
 a.every(condition); // return true if all elements satisfy condition
 a.some(condition); // return true of some elements satisfy condition
 
@@ -60,11 +61,17 @@ a.forEach(element => console.log(element)); // print each element
 let s = 'Very cool string';
 
 // Slice O(N) (end-start)
-s.slice(2);	// 'ry cool string'
-s.slice(2, 7);	// 'ry co'
+s.slice(2);		// 'ry cool string'
+s.slice(2, 7);		// 'ry co'
 
 // Split
+s.split('');		// ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
+s.split(' ');		// ['Very', 'cool', 'string']
+s.split(' ', 2);	// ['Very', 'cool']
+s.split('r');		// ["Ve", "y cool st", "ing"]
 
+// Splice
+s.splice(startingIndex, amountToRemove, whatToPutInstead);
 
 
 
