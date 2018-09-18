@@ -73,15 +73,70 @@ s.split('r');		// ["Ve", "y cool st", "ing"]
 // Splice
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
 
+// SLICE
+var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// expected output: Array ["camel", "duck", "elephant"]
+
+// SPLICE
+var months = ['Jan', 'March', 'April', 'June'];
+months.splice(1, 0, 'Feb');
+// inserts at 1st index position
+console.log(months);
+// expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
+
+// SOME
+var array = [1, 2, 3, 4, 5];
+
+var even = function(element) {
+  // checks whether an element is even
+  return element % 2 === 0;
+};
+
+console.log(array.some(even));
+// expected output: true
+
+// EVERY
+function isBelowThreshold(currentValue) {
+  return currentValue < 40;
+}
+
+var array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
+
+// .CONCAT()
+var array1 = ['a', 'b', 'c'];
+var array2 = ['d', 'e', 'f'];
+
+console.log(array1.concat(array2));
+// expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+// .FILTER()
+function isBigEnough(value) {
+  return value >= 10;
+}
+
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+
+// .MAP()
+var array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
 
 
-
-// .some()
-// .every()
-// .concat()
-// .filter()
-// .map()
-// .reduce()
+// .REDUCE()
+var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+// sum is 6
 
 
 
