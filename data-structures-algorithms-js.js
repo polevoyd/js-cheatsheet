@@ -138,7 +138,9 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
 }, 0);
 // sum is 6
 
-
+// OBJECTS
+Object.keys(obj);
+Object.values(obj);
 
 
 // MAP
