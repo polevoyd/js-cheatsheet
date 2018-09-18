@@ -76,6 +76,15 @@ s.splice(startingIndex, amountToRemove, whatToPutInstead);
 
 
 
+// .some()
+// .every()
+// .concat()
+// .filter()
+// .map()
+// .reduce()
+
+
+
 
 // MAP
 // execute on each element and return new array
