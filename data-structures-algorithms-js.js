@@ -39,11 +39,11 @@ let temp = a.slice();
 a.reverse();        // [9, 8, 7, 6, 5, 4, 3, 2, 1]
 a.sort();           // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 a.join();           // '1,2,3,4,5,6,7,8,9'
-a.join(''); // -> 12345
-a.join('-'); // -> 1-2-3-4-5
+a.join('');         // '123456789'
+a.join('-');        // '1-2-3-4-5-6-7-8-9'
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
 a.every(condition); // return true if all elements satisfy condition
-a.some(condition); // return true of some elements satisfy condition
+a.some(condition);  // return true of some elements satisfy condition
 
 let arr = [1, 2, 3, 4, 5 ];
 let [a, b, c, d, e] = arr;  // a = 1, b = 2, c = 3, d = 4, e = 5
