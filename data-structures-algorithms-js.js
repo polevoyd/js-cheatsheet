@@ -35,10 +35,10 @@ let subAr = a.slice(0, 3);
 let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp = a.slice();
 
-// [1, 2, 3, 4, 5]
-a.reverse();
-a.sort();
-a.join(); // -> 1,2,3,4,5
+// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+a.reverse();        // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+a.sort();           // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a.join();           // '1,2,3,4,5,6,7,8,9'
 a.join(''); // -> 12345
 a.join('-'); // -> 1-2-3-4-5
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
