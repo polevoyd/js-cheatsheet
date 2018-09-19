@@ -61,14 +61,14 @@ a.forEach(element => console.log(element)); // print each element
 let s = 'Very cool string';
 
 // Slice O(N) (end-start)
-s.slice(2);		// 'ry cool string'
-s.slice(2, 7);		// 'ry co'
+s.slice(2);       // 'ry cool string'
+s.slice(2, 7);    // 'ry co'
 
 // Split
-s.split('');		// ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
-s.split(' ');		// ['Very', 'cool', 'string']
-s.split(' ', 2);	// ['Very', 'cool']
-s.split('r');		// ["Ve", "y cool st", "ing"]
+s.split('');      // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
+s.split(' ');     // ['Very', 'cool', 'string']
+s.split(' ', 2);  // ['Very', 'cool']
+s.split('r');     // ["Ve", "y cool st", "ing"]
 
 // Splice
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
@@ -76,8 +76,7 @@ s.splice(startingIndex, amountToRemove, whatToPutInstead);
 // SLICE
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
-console.log(animals.slice(2));
-// expected output: Array ["camel", "duck", "elephant"]
+animals.slice(2); // ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
