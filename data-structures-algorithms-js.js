@@ -52,7 +52,7 @@ let {x, y, z} = object; // will assign values
 // FOREACH
 // does not change array and return undefined
 a.forEach(function(item, index, array){
-// do something
+  array[index] = item * 2;  // will modify array in place
 });
 
 a.forEach(element => console.log(element)); // print each element
