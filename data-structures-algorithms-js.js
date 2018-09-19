@@ -82,8 +82,7 @@ animals.slice(2); // ["camel", "duck", "elephant"]
 var months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
 // inserts at 1st index position
-console.log(months);
-// expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
+console.log(months);  // ['Jan', 'Feb', 'March', 'April', 'June']
 
 // SOME
 var array = [1, 2, 3, 4, 5];
