@@ -119,7 +119,6 @@ var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 // .MAP()
 var array1 = [1, 4, 9, 16];
 
-// pass a function to map
 const map1 = array1.map(x => x * 2);	// [2, 8, 18, 32]
 
 
