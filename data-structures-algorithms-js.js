@@ -86,7 +86,7 @@ console.log(months);  		// ['Jan', 'Feb', 'March', 'April', 'June']
 var array = [1, 2, 3, 4, 5];
 
 var even = function(element) {
-  // checks whether an element is even
+  // checks if element is even
   return element % 2 === 0;
 };
 
