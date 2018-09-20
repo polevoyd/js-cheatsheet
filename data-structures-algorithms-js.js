@@ -75,8 +75,7 @@ s.splice(startingIndex, amountToRemove, whatToPutInstead);
 
 // SLICE
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-
-animals.slice(2); // ["camel", "duck", "elephant"]
+animals.slice(2); 	// ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
