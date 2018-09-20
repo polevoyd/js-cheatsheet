@@ -52,10 +52,10 @@ let {x, y, z} = object; // will assign values
 // FOREACH
 // does not change array and return undefined
 a.forEach(function(item, index, array){
-  array[index] = item * 2;  // will modify array in place
+  array[index] = item * 2; 			// will modify array in place
 });
 
-a.forEach(element => console.log(element)); // print each element
+a.forEach(element => console.log(element));	// print each element
 
 // STRING
 let s = 'Very cool string';
@@ -136,8 +136,8 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
 
 
 // OBJECTS
-Object.keys(obj);
-Object.values(obj);
+Object.keys(obj);	// array of keys
+Object.values(obj);	// array of values
 
 
 // MAP
