@@ -102,15 +102,13 @@ function isBelowThreshold(currentValue) {
 
 var array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(array1.every(isBelowThreshold));
-// expected output: true
+console.log(array1.every(isBelowThreshold));  // true
 
 // .CONCAT()
 var array1 = ['a', 'b', 'c'];
 var array2 = ['d', 'e', 'f'];
 
-console.log(array1.concat(array2));
-// expected output: Array ["a", "b", "c", "d", "e", "f"]
+console.log(array1.concat(array2)); // ["a", "b", "c", "d", "e", "f"]
 
 // .FILTER()
 function isBigEnough(value) {
