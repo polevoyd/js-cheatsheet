@@ -90,8 +90,7 @@ var even = function(element) {
   return element % 2 === 0;
 };
 
-console.log(array.some(even));
-// true
+console.log(array.some(even));	// true
 
 // EVERY
 function isBelowThreshold(currentValue) {
