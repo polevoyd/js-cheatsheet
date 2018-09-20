@@ -100,8 +100,7 @@ function isBelowThreshold(currentValue) {
 
 var array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(array1.every(isBelowThreshold));
-// expected output: true
+console.log(array1.every(isBelowThreshold));	// true
 
 // .CONCAT()
 var array1 = ['a', 'b', 'c'];
