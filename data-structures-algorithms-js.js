@@ -111,8 +111,7 @@ function isBigEnough(value) {
   return value >= 10;
 }
 
-var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
-// [12, 130, 44]
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);		// [12, 130, 44]
 
 // .MAP()
 var array1 = [1, 4, 9, 16];
