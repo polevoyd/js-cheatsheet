@@ -74,7 +74,7 @@ s.splice(startingIndex, amountToRemove, whatToPutInstead);
 
 // SLICE
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-animals.slice(2); 	// ["camel", "duck", "elephant"]
+animals.slice(2); 		// ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
@@ -104,7 +104,7 @@ console.log(array1.every(isBelowThreshold));	// true
 var array1 = ['a', 'b', 'c'];
 var array2 = ['d', 'e', 'f'];
 
-console.log(array1.concat(array2));	// ["a", "b", "c", "d", "e", "f"]
+console.log(array1.concat(array2));		// ["a", "b", "c", "d", "e", "f"]
 
 // .FILTER() - FILTER values with a condition and return array of only ones that TRUE
 function isBigEnough(value) {
@@ -147,8 +147,8 @@ a = a.filter(function(num){
 
 a = a.filter( num => num < 10 );
 
-'string'.trim(); // delete spaces on sides
-Number.isInteger(); // true of false
+'string'.trim(); 	// delete spaces on sides
+Number.isInteger(); 	// true of false
 let num = parseInt('10'); // to Integer
 console.log( `My name is ${firstName}` );
 5 < 10 ? true : false;
