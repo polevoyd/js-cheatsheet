@@ -121,9 +121,8 @@ const map1 = array1.map(x => x * 2);	// [2, 8, 18, 32]
 
 // .REDUCE()
 var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
-  return accumulator + currentValue;
+  return accumulator + currentValue;	// sum is 6
 }, 0);
-// sum is 6
 
 
 // OBJECTS
