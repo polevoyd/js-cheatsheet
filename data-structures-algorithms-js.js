@@ -161,7 +161,7 @@ const sum2 = (x,y) => {
 	return x+y;
 }
 
-const sum3 = (x,y) => x+y; // one line doesnt need a return
+const sum3 = (x,y) => x+y;	// one line doesnt need a return
 
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 // MAP
