@@ -46,8 +46,8 @@ a.every(condition); // return true if all elements satisfy condition
 a.some(condition);  // return true of some elements satisfy condition
 
 let arr = [1, 2, 3, 4, 5 ];
-let [a, b, c, d, e] = arr;  // a = 1, b = 2, c = 3, d = 4, e = 5
-let {x, y, z} = object; // will assign values
+let [a, b, c, d, e] = arr;	// a = 1, b = 2, c = 3, d = 4, e = 5
+let {x, y, z} = object;		// will assign values
 
 // FOREACH - does not change array and return undefined
 a.forEach(function(item, index, array){
