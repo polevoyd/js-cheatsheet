@@ -91,7 +91,7 @@ var even = function(element) {
 
 console.log(array.some(even));	// true
 
-// EVERYcheck if SOME of elements is true and return bool
+// EVERY - check if EVERY of elements is true and return bool
 function isBelowThreshold(currentValue) {
   return currentValue < 40;
 }
@@ -106,7 +106,7 @@ var array2 = ['d', 'e', 'f'];
 
 console.log(array1.concat(array2));	// ["a", "b", "c", "d", "e", "f"]
 
-// .FILTER()
+// .FILTER() - FILTER values with a condition and return array of only ones that TRUE
 function isBigEnough(value) {
   return value >= 10;
 }
