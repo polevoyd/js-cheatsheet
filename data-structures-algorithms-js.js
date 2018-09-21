@@ -91,7 +91,7 @@ var even = function(element) {
 
 console.log(array.some(even));	// true
 
-// EVERY
+// EVERYcheck if SOME of elements is true and return bool
 function isBelowThreshold(currentValue) {
   return currentValue < 40;
 }
