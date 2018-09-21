@@ -81,7 +81,7 @@ var months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');	// inserts at 1st index position
 console.log(months);  		// ['Jan', 'Feb', 'March', 'April', 'June']
 
-// SOME
+// SOME - check if SOME of elements is true and return bool
 var array = [1, 2, 3, 4, 5];
 
 var even = function(element) {
