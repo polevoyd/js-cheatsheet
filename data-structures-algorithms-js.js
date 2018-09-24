@@ -89,6 +89,7 @@ var even = function(element) {
   return element % 2 === 0;
 };
 
+
 console.log(array.some(even));	// true
 
 // EVERY - check if EVERY of elements is true and return bool
