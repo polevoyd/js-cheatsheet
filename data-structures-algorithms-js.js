@@ -263,7 +263,17 @@ arr1.flatMap(x => [x * 2]);
 arr1.flatMap(x => [[x * 2]]);
 // [[2], [4], [6], [8]]
 
+// The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
+console.log(array1.includes(2));
+// expected output: true
 
+var pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));
+// expected output: true
+
+console.log(pets.includes('at'));
+// expected output: false
 
 
 
