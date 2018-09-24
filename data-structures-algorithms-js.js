@@ -246,6 +246,11 @@ function findFirstLargeNumber(element) {
 console.log(array1.findIndex(findFirstLargeNumber));
 // expected output: 3
 
+// The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+
+var arr1 = [1, 2, [3, 4]];
+arr1.flat(); 
+// [1, 2, 3, 4]
 
 
 
