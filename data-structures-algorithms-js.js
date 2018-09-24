@@ -13,7 +13,7 @@
 // Find Object	O(n)
 
 let array = []; 
-
+ 	
 // Insert head, index, tail
 let headIns = a.unshift(value);	   
 let indexIns = a.splice(index, 0, value);
