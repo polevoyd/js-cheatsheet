@@ -124,7 +124,7 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) {
   return accumulator + currentValue;	// sum is 6
 }, 0);
 
-
+ 
 // OBJECTS
 Object.keys(obj)	// array of keys
 Object.values(obj);	// array of values
