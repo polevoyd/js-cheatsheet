@@ -203,7 +203,7 @@ console.log(array1.copyWithin(0, 3, 4));
 console.log(array1.copyWithin(1, 3));
 // expected output: Array [4, 4, 5, 4, 5]
 
-
+// The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
 
 
 
