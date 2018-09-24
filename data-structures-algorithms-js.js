@@ -163,6 +163,11 @@ const sum2 = (x,y) => {
 
 const sum3 = (x,y) => x+y;	// one line doesnt need a return
 
+// c utuba
+arr.filter((e, i, l) => l.lastIndexOf(e) == i);
+// или es6
+Array.from(new Set(arr));
+
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 // MAP
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
