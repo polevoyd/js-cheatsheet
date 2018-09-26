@@ -12,6 +12,23 @@
 // Find Index	  O(1)
 // Find Object	O(n)
 
+/*    Use for
+
+> Simple storage
+> Adding but not deleting
+> Serialization
+> Quick lookups by index
+> Easy conversion to C-style arrays
+> Efficient traversal (contiguous CPU caching)
+
+  Do not use for
+
+> Insertion/deletion in the middle of the list
+> Dynamically changing storage
+> Non-integer indexing
+
+*/
+
 let array = []; 
  	
 // Insert head, index, tail
@@ -78,19 +95,17 @@ animals.slice(2); 		// ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');	// inserts at 1st index position
-console.log(months);  		// ['Jan', 'Feb', 'March', 'April', 'June']
+months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June']
+console.log(months);  		
 
 // SOME - check if SOME of elements is true and return bool
-var array = [1, 2, 3, 4, 5];
 
-var even = function(element) {
-  // checks if element is even
+var even = function(element) 
+{
   return element % 2 === 0;
 };
 
-
-console.log(array.some(even));	// true
+array1.some(even);	// true
 
 // EVERY - check if EVERY of elements is true and return bool
 function isBelowThreshold(currentValue) {
@@ -313,3 +328,4 @@ myMap.forEach(function(value, key) { console.log(key + ' = ' + value); });	// "0
 
 // Extra
 let exist = myMap.has(key);
+
