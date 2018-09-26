@@ -1,5 +1,5 @@
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
-// ARRAY
+//               ARRAY
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 // Insert Head	O(n)
 // Insert Index	O(n)
@@ -9,7 +9,7 @@
 // Remove Index	O(n)
 // Remove Tail	O(1)
 
-// Find Index	O(1)
+// Find Index	  O(1)
 // Find Object	O(n)
 
 let array = []; 
