@@ -35,9 +35,9 @@ let subAr = a.slice(0, 3);
 let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp =  a.slice();
 
-// let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//                     [1, 2, 3, 4, 5, 6, 7, 8, 9];
 a.reverse();        // [9, 8, 7, 6, 5, 4, 3, 2, 1]
-a.sort();           // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+a.sort();           // [1, 2, 3, 4, 5, 6, 7, 8, 9] (sorting by first digit)
 a.join();           // '1,2,3,4,5,6,7,8,9'
 a.join('');         // '123456789'
 a.join('-');        // '1-2-3-4-5-6-7-8-9'
@@ -50,8 +50,8 @@ let [a, b, c, d, e] = arr;	// a = 1, b = 2, c = 3, d = 4, e = 5
 let {x, y, z} = object;		// will assign values
 
 // FOREACH - does not change array and return undefined
-a.forEach(function(item, index, array){
-  array[index] = item * 2; 			// will modify array in place
+a.forEach(function(element, index, array){
+  array[index] = element * 2; 			// will modify array in place
 });
 
 a.forEach(element => console.log(element));	// print each element
