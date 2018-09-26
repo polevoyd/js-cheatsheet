@@ -15,25 +15,25 @@
 let array = []; 
  	
 // Insert head, index, tail
-let headIns = a.unshift(value);	   
-let indexIns = a.splice(index, 0, value);
-let tailIns = a.push(value);		
+let headIns =   a.unshift(value);	   
+let indexIns =  a.splice(index, 0, value);
+let tailIns =   a.push(value);		
 
 // Access head, index, tail
-let headAcc = a[0];	
-let indexAcc = a[index];	
-let tailAcc = a[a.length-1];
+let headAcc =   a[0];	
+let indexAcc =  a[index];	
+let tailAcc =   a[a.length-1];
 
 // Remove head, index, tail
-let removeHead = a.shift();	
+let removeHead =  a.shift();	
 let removeIndex = a.splice(index, 1);
-let removeTail = a.pop();
+let removeTail =  a.pop();
 
 // Extra
-let pos = a.indexOf(value);
+let pos =   a.indexOf(value);
 let subAr = a.slice(0, 3);
 let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
-let temp = a.slice();
+let temp =  a.slice();
 
 // let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 a.reverse();        // [9, 8, 7, 6, 5, 4, 3, 2, 1]
