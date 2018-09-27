@@ -125,26 +125,9 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
 
  
 // OBJECTS
-Object.keys(obj)	// array of keys
+Object.keys(obj)	  // array of keys
 Object.values(obj);	// array of values
 
-
-// MAP
-// execute on each element and return new array
-a = a.map(function(num){
-	return num * 2;
-});
-
-a = a.map( num => num * 2);
-
-// FILTER
-// check and return elements that true for condition
-
-a = a.filter(function(num){
-	return (num < 10);
-});
-
-a = a.filter( num => num < 10 );
 
 'string'.trim(); 	// delete spaces on sides
 Number.isInteger(); 	// true of false
