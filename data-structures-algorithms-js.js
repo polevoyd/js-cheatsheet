@@ -99,22 +99,16 @@ months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June']
 console.log(months);  		
 
 // SOME - check if SOME of elements is true and return bool
-
-var even = function(element) 
-{
-  return element % 2 === 0;
-};
-
-array1.some(even);	// true
+array1.some( element => element % 2 === 0 );	// true
 
 // EVERY - check if EVERY of elements is true and return bool
 function isBelowThreshold(currentValue) {
-  return currentValue < 40;
+  return currentValue < 50;
 }
 
 var array1 = [1, 30, 39, 29, 10, 13];
 
-console.log(array1.every(isBelowThreshold));	// true
+console.log(array1.every(currentValue < 50));	// true
 
 // .CONCAT()
 var array1 = ['a', 'b', 'c'];
