@@ -110,12 +110,8 @@ var array2 = ['d', 'e', 'f'];
 
 array1.concat(array2);		// ["a", "b", "c", "d", "e", "f"]
 
-// .FILTER() - FILTER values with a condition and return array of only ones that TRUE
-function isBigEnough(value) {
-  return value >= 10;
-}
-
-var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);		// [12, 130, 44]
+// .FILTER - FILTER values with a condition and return array of only ones that TRUE
+[12, 5, 8, 130, 44].filter( element => element > 5);		// [6, 7, 8, 9, 10]
 
 // .MAP()
 var array1 = [1, 4, 9, 16];
