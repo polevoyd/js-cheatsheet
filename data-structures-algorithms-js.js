@@ -102,19 +102,13 @@ console.log(months);
 array1.some( element => element % 2 === 0 );	// true
 
 // EVERY - check if EVERY of elements is true and return bool
-function isBelowThreshold(currentValue) {
-  return currentValue < 50;
-}
+array1.every(currentValue < 50);	// true
 
-var array1 = [1, 30, 39, 29, 10, 13];
-
-console.log(array1.every(currentValue < 50));	// true
-
-// .CONCAT()
+// .CONCAT - concat arrays and return array
 var array1 = ['a', 'b', 'c'];
 var array2 = ['d', 'e', 'f'];
 
-console.log(array1.concat(array2));		// ["a", "b", "c", "d", "e", "f"]
+array1.concat(array2);		// ["a", "b", "c", "d", "e", "f"]
 
 // .FILTER() - FILTER values with a condition and return array of only ones that TRUE
 function isBigEnough(value) {
