@@ -168,13 +168,10 @@ console.log(array1.copyWithin(1, 3));		// expected output: Array [4, 4, 5, 4, 5]
 // The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
 
 var array1 = ['a', 'b', 'c'];
-
 var iterator1 = array1.entries();
 
-console.log(iterator1.next().value);	// [0, "a"]
-
-console.log(iterator1.next().value);
-// expected output: Array [1, "b"]
+iterator1.next().value;	// [0, "a"]
+iterator1.next().value; // [1, "b"]
 
 // The fill() method fills all the elements of an array from a start index to an end index with a static value. The end index is not included.
 var array1 = [1, 2, 3, 4];
