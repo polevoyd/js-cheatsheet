@@ -108,7 +108,7 @@ array1.every(currentValue < 50);	// true
 var array1 = ['a', 'b', 'c'];
 var array2 = ['d', 'e', 'f'];
 
-array1.concat(array2);		// ["a", "b", "c", "d", "e", "f"]
+array1.concat(array2);		// return ["a", "b", "c", "d", "e", "f"]
 
 // .FILTER - FILTER values with a condition and return array of only ones that TRUE
 [12, 5, 8, 130, 44].filter( element => element > 5);
