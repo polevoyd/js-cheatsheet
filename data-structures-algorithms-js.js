@@ -129,24 +129,13 @@ Object.keys(obj)	  // array of keys
 Object.values(obj);	// array of values
 
 
-'string'.trim(); 	// delete spaces on sides
-Number.isInteger(); 	// true of false
+'string'.trim();          // delete spaces on sides
+Number.isInteger();       // true of false
 let num = parseInt('10'); // to Integer
-console.log( `My name is ${firstName}` );
-5 < 10 ? true : false;
 
-function sum(x, y){
- 	return x+y;
-}
 
-const sum2 = (x,y) => {
-	return x+y;
-}
-
-const sum3 = (x,y) => x+y;	// one line doesnt need a return
-
-// c utuba
-arr.filter((e, i, l) => l.lastIndexOf(e) == i);
+// remove duplicates from array
+arr.filter((element, index, array) => array.lastIndexOf(element) == index);
 // или es6
 Array.from(new Set(arr));
 
