@@ -153,8 +153,8 @@ Array.isArray(undefined);  // false
 
 var array2 = ['d', 'e', 'f'];
 
-console.log(array1.concat(array2));	// ["a", "b", "c", "d", "e", "f"]
-e arrays. This method does not change the existing arrays, but instead returns a new array.
+array1.concat(array2);	// ["a", "b", "c", "d", "e", "f"]
+
 
 // The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
 var array1 = [1, 2, 3, 4, 5];
