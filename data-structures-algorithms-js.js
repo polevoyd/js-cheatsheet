@@ -190,7 +190,7 @@ var found = array1.find(function(element) {
 });
 
 
-// expected output: 12
+// 12
 
 // The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
 var array1 = [5, 12, 8, 130, 44];
