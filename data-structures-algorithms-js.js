@@ -95,8 +95,7 @@ animals.slice(2); 		// ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June']
-console.log(months);  		
+months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June'] 		
 
 // SOME - check if SOME of elements is true and return bool
 array1.some( element => element % 2 === 0 );	// true
@@ -115,7 +114,6 @@ array1.concat(array2);		// return ["a", "b", "c", "d", "e", "f"]
 
 // .MAP() - changing each element and return modified array
 const map1 = array.map(element => element * 2);
-
 
 // .REDUCE() - reducing array and return one element
 var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) 
@@ -142,7 +140,7 @@ Array.from(new Set(arr));
 
 //The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
 Array.from('foo');      // ["f", "o", "o"]
-Array.from([1, 2, 3], x => x + x);  // [2, 4, 6]
+Array.from([1, 2, 3], x => x + x);  // [2, 4, 6] - can pass a callback to set each element to something 
 
 
 // The Array.isArray() method determines whether the passed value is an Array.
