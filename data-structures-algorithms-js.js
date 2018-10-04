@@ -129,7 +129,7 @@ Object.values(obj);	// array of values
 
 'string'.trim();          // delete spaces on sides
 Number.isInteger();       // true of false
-let num = parseInt('10'); // to Integer
+parseInt('10'); // to Integer
 
 
 // remove duplicates from array
