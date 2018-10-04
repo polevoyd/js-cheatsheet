@@ -204,7 +204,7 @@ var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 beasts.indexOf('bison');  // 1
 
 // start from index 2
-console.log(beasts.indexOf('bison', 2));	// expected output: 4
+beasts.indexOf('bison', 2);	// 4
 
 
 
