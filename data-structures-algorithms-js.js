@@ -131,23 +131,17 @@ Object.values(obj);	// array of values
 Number.isInteger();       // true of false
 parseInt('10'); // to Integer
 
-
 // remove duplicates from array
-arr.filter((element, index, array) => array.lastIndexOf(element) == index);
+arr.filter((element, index, array) => array.lastIndexOf(element) === index);
 // construct an new array from a set of arr - removes duplicates
 Array.from(new Set(arr));
-
 
 //The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
 Array.from('foo');      // ["f", "o", "o"]
 Array.from([1, 2, 3], x => x + x);  // [2, 4, 6] - can pass a callback to set each element to something 
 
-
 // The Array.isArray() method determines whether the passed value is an Array.
 Array.isArray([1, 2, 3]);  // true
-Array.isArray({foo: 123}); // false
-Array.isArray('foobar');   // false
-Array.isArray(undefined);  // false
 
 // The concat() method is used to merge two or morvar array1 = ['a', 'b', 'c'];
 
