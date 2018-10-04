@@ -173,13 +173,11 @@ var found = [5, 12, 8, 130, 44].find(function(element) {
 }); // 12
 
 // The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
-var array1 = [5, 12, 8, 130, 44];
-
 function findFirstLargeNumber(element) {
   return element > 13;
 }
 
-array1.findIndex(findFirstLargeNumber); // 3
+[5, 12, 8, 130, 44].findIndex(findFirstLargeNumber); // 3
 
 // The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 [1, 2, [3, 4]].flat();  // [1, 2, 3, 4]
