@@ -168,9 +168,7 @@ iterator1.next().value; // [1, "b"]
 [1, 2, 3, 4].fill(5, 1); // [1, 5, 5, 5]
 
 // The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
-var array1 = [5, 12, 8, 130, 44];
-
-var found = array1.find(function(element) {
+var found = [5, 12, 8, 130, 44].find(function(element) {
   return element > 10;
 }); // 12
 
