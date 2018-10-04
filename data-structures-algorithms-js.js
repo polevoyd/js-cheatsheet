@@ -144,10 +144,7 @@ Array.from([1, 2, 3], x => x + x);  // [2, 4, 6] - can pass a callback to set ea
 Array.isArray([1, 2, 3]);  // true
 
 // The concat() method is used to merge two or morvar array1 = ['a', 'b', 'c'];
-
-var array2 = ['d', 'e', 'f'];
-
-array1.concat(array2);	// ["a", "b", "c", "d", "e", "f"]
+array1.concat(['d', 'e', 'f']); // ["a", "b", "c", "d", "e", "f"]
 
 
 // The copyWithin() method shallow copies part of an array to another location in the same array and returns it, without modifying its size.
