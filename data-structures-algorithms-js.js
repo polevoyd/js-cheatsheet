@@ -254,7 +254,6 @@ class List
    *   - Unshift - Add value to the start
    *   - Shift   - Remove a value from the start
    */
-
   /*
    * Starting with "push" we need a way to add items to the end of the list.
    *
