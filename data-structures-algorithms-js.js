@@ -192,10 +192,6 @@ function findFirstLargeNumber(element) {
 // The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
 array1.includes(2); // true
 
-var pets = ['cat', 'dog', 'bat'];
-
-pets.includes('cat');  // true
-
 // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 ['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison');  // 1
 
