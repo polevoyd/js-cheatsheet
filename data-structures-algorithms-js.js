@@ -203,10 +203,15 @@ array1.includes(2); // true
 //            Linked List
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 
-// Access	Search	Insertion	Deletion
-// O(n)	O(n)	O(1)	O(1)
-// Space Complexity
-// O(n)
+// Insert Head	O(1)
+// Insert Index	O(n)
+// Insert Tail	O(1)
+// Remove Head	O(1)
+// Remove Index	O(n)
+// Remove Tail	O(1)
+// Find Index	O(n)
+// Find Object	O(n)
+// Example Code
 
 // Use for
 
