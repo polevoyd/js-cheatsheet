@@ -208,17 +208,10 @@ array1.includes(2); // true
 // Space Complexity
 // O(n)
 
-class List {
-
-  /**
-   * We start with an empty block of memory which we are going to represent
-   * with a normal JavaScript array and we'll store the length of the list.
-   *
-   * Note that we want to store the length separately because in real life the
-   * "memory" doesn't have a length you can read from.
-   */
-
-  constructor() {
+class List
+{
+  constructor()
+  {
     this.memory = [];
     this.length = 0;
   }
