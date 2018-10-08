@@ -267,9 +267,29 @@ array1.includes(2); // true
 //   return counter !== 0 ? counter+1 : counter;
 // }
 
+// 3. Sliding window
+// to found longest sequence of elements we can establish window and move it
+// by -most left element and + to last one
+
+// function maxSubarraySum(arr, num){
+//   let maxSum = 0;
+//   let tempSum = 0;
+//   if (arr.length < num) return null;
+//   for (let i = 0; i < num; i++) {
+//     maxSum += arr[i];
+//   }
+//   tempSum = maxSum;
+//   for (let i = num; i < arr.length; i++) {
+//     tempSum = tempSum - arr[i - num] + arr[i];
+//     maxSum = Math.max(maxSum, tempSum);
+//   }
+//   return maxSum;
+// }
+
+// maxSubarraySum([2,6,9,2,1,8,5,6,3],3);
 
 
-
+// 4. Divide & Conquer
 
 
 
