@@ -129,9 +129,9 @@ Object.values(obj);	// array of values
 
 'string'.trim();          // delete spaces on sides
 Number.isInteger();       // true of false
-parseInt('10'); // to Integer
+parseInt('10');           // to Integer
 
-// remove duplicates from array
+// remove duplicates from array with filter (checking if current element index is a last one)
 arr.filter((element, index, array) => array.lastIndexOf(element) === index);
 // construct an new array from a set of arr - removes duplicates
 Array.from(new Set(arr));
