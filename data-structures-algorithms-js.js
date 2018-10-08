@@ -4,7 +4,7 @@
 // Insert Head	O(n)
 // Insert Index	O(n)
 // Insert Tail	O(1)
- 
+
 // Remove Head	O(n)
 // Remove Index	O(n)
 // Remove Tail	O(1)
@@ -29,20 +29,20 @@
 
 */
 
-let array = []; 
+let array = [];
 
 // Insert head, index, tail
-let headIns =   a.unshift(value);	   
+let headIns =   a.unshift(value);
 let indexIns =  a.splice(index, 0, value);
-let tailIns =   a.push(value);		
+let tailIns =   a.push(value);
 
 // Access head, index, tail
-let headAcc =   a[0];	
-let indexAcc =  a[index];	
+let headAcc =   a[0];
+let indexAcc =  a[index];
 let tailAcc =   a[a.length-1];
 
 // Remove head, index, tail
-let removeHead =  a.shift();	
+let removeHead =  a.shift();
 let removeIndex = a.splice(index, 1);
 let removeTail =  a.pop();
 
@@ -53,14 +53,14 @@ let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp =  a.slice();
 
 //                     [1, 2, 3, 4, 5, 6, 7, 8, 9];
-a.reverse();        // [9, 8, 7, 6, 5, 4, 3, 2, 1]
-a.sort();           // [1, 2, 3, 4, 5, 6, 7, 8, 9] (sorting by first digit)
-a.join();           // '1,2,3,4,5,6,7,8,9'
-a.join('');         // '123456789'
-a.join('-');        // '1-2-3-4-5-6-7-8-9'
+a.reverse(); // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+a.sort(); // [1, 2, 3, 4, 5, 6, 7, 8, 9] (sorting by first digit)
+a.join(); // '1,2,3,4,5,6,7,8,9'
+a.join(''); // '123456789'
+a.join('-'); // '1-2-3-4-5-6-7-8-9'
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
 a.every(condition); // return true if all elements satisfy condition
-a.some(condition);  // return true of some elements satisfy condition
+a.some(condition); // return true of some elements satisfy condition
 
 let arr = [1, 2, 3, 4, 5 ];
 let [a, b, c, d, e] = arr;	// a = 1, b = 2, c = 3, d = 4, e = 5
@@ -77,14 +77,14 @@ a.forEach(element => console.log(element));	// print each element
 let s = 'Very cool string';
 
 // Slice O(N) (end-start)
-s.slice(2);       // 'ry cool string'
-s.slice(2, 7);    // 'ry co'
+s.slice(2); // 'ry cool string'
+s.slice(2, 7); // 'ry co'
 
 // Split
-s.split('');      // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
-s.split(' ');     // ['Very', 'cool', 'string']
-s.split(' ', 2);  // ['Very', 'cool']
-s.split('r');     // ["Ve", "y cool st", "ing"]
+s.split(''); // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
+s.split(' '); // ['Very', 'cool', 'string']
+s.split(' ', 2); // ['Very', 'cool']
+s.split('r'); // ["Ve", "y cool st", "ing"]
 
 // Splice
 s.splice(startingIndex, amountToRemove, whatToPutInstead);
@@ -95,7 +95,7 @@ animals.slice(2); 		// ["camel", "duck", "elephant"]
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
-months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June'] 		
+months.splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June']
 
 // SOME - check if SOME of elements is true and return bool
 array1.some( element => element % 2 === 0 );	// true
@@ -116,20 +116,20 @@ array1.concat(array2);		// return ["a", "b", "c", "d", "e", "f"]
 const map1 = array.map(element => element * 2);
 
 // .REDUCE() - reducing array and return one element
-var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue) 
+var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
 {
   return accumulator + currentValue;	// sum is 6
-}, 0);  // starting value
+}, 0); // starting value
 
- 
+
 // OBJECTS
-Object.keys(obj)	  // array of keys
+Object.keys(obj); // array of keys
 Object.values(obj);	// array of values
 
 
-'string'.trim();          // delete spaces on sides
-Number.isInteger();       // true of false
-parseInt('10');           // to Integer
+'string'.trim(); // delete spaces on sides
+Number.isInteger(); // true of false
+parseInt('10'); // to Integer
 
 // remove duplicates from array with filter (checking if current element index is a last one)
 arr.filter((element, index, array) => array.lastIndexOf(element) === index);
@@ -137,11 +137,11 @@ arr.filter((element, index, array) => array.lastIndexOf(element) === index);
 Array.from(new Set(arr));
 
 //The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object.
-Array.from('foo');      // ["f", "o", "o"]
-Array.from([1, 2, 3], x => x + x);  // [2, 4, 6] - can pass a callback to set each element to something 
+Array.from('foo'); // ["f", "o", "o"]
+Array.from([1, 2, 3], x => x + x); // [2, 4, 6] - can pass a callback to set each element to something
 
 // The Array.isArray() method determines whether the passed value is an Array.
-Array.isArray([1, 2, 3]);  // true
+Array.isArray([1, 2, 3]); // true
 
 // The concat() method is used to merge two or morvar array1 = ['a', 'b', 'c'];
 array1.concat(['d', 'e', 'f']); // ["a", "b", "c", "d", "e", "f"]
@@ -180,7 +180,7 @@ function findFirstLargeNumber(element) {
 [5, 12, 8, 130, 44].findIndex(findFirstLargeNumber); // 3
 
 // The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
-[1, 2, [3, 4]].flat();  // [1, 2, 3, 4]
+[1, 2, [3, 4]].flat(); // [1, 2, 3, 4]
 
 // The flatMap() method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map followed by a flat of depth 1, but flatMap is often quite useful, as merging both into one method is slightly more efficient.
 [1, 2, 3, 4].map(x => [x * 2]);		// [[2], [4], [6], [8]]
@@ -193,7 +193,7 @@ function findFirstLargeNumber(element) {
 array1.includes(2); // true
 
 // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
-['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison');  // 1
+['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison'); // 1
 
 // start from index 2
 ['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison', 2);	// 4
@@ -203,10 +203,10 @@ array1.includes(2); // true
 // 1. Frequency counter pattern (anagrams etc)
 // Can be done with a maps (add to a map where letter is key and its counter is a value)
 
-// function validAnagram(first, second) 
+// function validAnagram(first, second)
 // {
-    
-//   if (first.length !== second.length) 
+
+//   if (first.length !== second.length)
 //   {
 //     return false;
 //   }
@@ -219,7 +219,7 @@ array1.includes(2); // true
 //     // if letter exists, increment, otherwise set to 1
 //     lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
 //   }
-  
+
 //   for (let i = 0; i < second.length; i++)
 //   {
 //     let letter = second[i];
@@ -235,6 +235,63 @@ array1.includes(2); // true
 //   }
 //   return true;
 // }
+
+// 2. Multiple pointers (usually used to count something)
+// One pointer act like a counter and move right if condition happen,
+// second pointer run and check for condition
+// function countUniqueValues(array) // count unique values in array
+// {
+//   //   let counter = {};
+
+//   //   for (let i of array)
+//   //       if (!counter[i])
+//   //           counter[i] = i;
+
+//   //   return Object.keys(counter).length;
+
+//   let counter = 0;
+//   let pointer = 1;
+
+//   while (pointer < array.length)
+//   {
+//     if (array[pointer] === array[counter])
+//     {
+//       pointer++;
+//     }
+//     else
+//     {
+//       counter++;
+//       array[counter] = array[pointer];
+//     }
+//   }
+//   return counter !== 0 ? counter+1 : counter;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 //            Linked List
@@ -519,9 +576,9 @@ myMap.delete(key);
 // Size
 myMap.size;
 
-for (var [key, value] of myMap) { console.log(key + ' = ' + value); }		// 0 = zero // 1 = one 
-for (var key of myMap.keys()) { console.log(key); }				// 0 // 1 
-for (var value of myMap.values()) { console.log(value); }			// zero // one 
+for (var [key, value] of myMap) { console.log(key + ' = ' + value); }		// 0 = zero // 1 = one
+for (var key of myMap.keys()) { console.log(key); }				// 0 // 1
+for (var value of myMap.values()) { console.log(value); }			// zero // one
 for (var [key, value] of myMap.entries()) { console.log(key + ' = ' + value); } // 0 = zero // 1 = one
 
 myMap.forEach(function(value, key) { console.log(key + ' = ' + value); });	// "0 = zero" // "1 = one"
