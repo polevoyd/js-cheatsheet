@@ -198,6 +198,43 @@ array1.includes(2); // true
 // start from index 2
 ['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison', 2);	// 4
 
+// Some classic problems and patterns to solve them
+
+// 1. Frequency counter pattern (anagrams etc)
+// Can be done with a maps (add to a map where letter is key and its counter is a value)
+
+// function validAnagram(first, second) 
+// {
+    
+//   if (first.length !== second.length) 
+//   {
+//     return false;
+//   }
+
+//   const lookup = {};
+
+//   for (let i = 0; i < first.length; i++)
+//   {
+//     let letter = first[i];
+//     // if letter exists, increment, otherwise set to 1
+//     lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
+//   }
+  
+//   for (let i = 0; i < second.length; i++)
+//   {
+//     let letter = second[i];
+//     // can't find letter or letter is zero then it's not an anagram
+//     if (!lookup[letter])
+//     {
+//       return false;
+//     }
+//     else
+//     {
+//       lookup[letter] -= 1;
+//     }
+//   }
+//   return true;
+// }
 
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 //            Linked List
