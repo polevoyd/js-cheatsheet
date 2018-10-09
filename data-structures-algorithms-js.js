@@ -206,9 +206,7 @@ array1.includes(2); // true
 // function validAnagram(first, second)
 // {
 //   if (first.length !== second.length)
-//   {
 //     return false;
-//   }
 
 //   const lookup = {};
 
