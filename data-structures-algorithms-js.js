@@ -161,10 +161,10 @@ iterator1.next().value; // [1, "b"]
 
 // The fill() method fills all the elements of an array from a start index to an end index with a static value. The end index is not included.
 // fill with 0 from position 2 until position 4
-[1, 2, 3, 4].fill(0, 2, 4);	// [1, 2, 0, 0]
+[1, 2, 3, 4].fill(0, 2, 4);	  // [1, 2, 0, 0]
 
 // fill with 5 from position 1
-[1, 2, 3, 4].fill(5, 1); // [1, 5, 5, 5]
+[1, 2, 3, 4].fill(5, 1);      // [1, 5, 5, 5]
 
 // The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
 var found = [5, 12, 8, 130, 44].find(function(element) {
@@ -297,7 +297,7 @@ array1.includes(2); // true
 //   let countNum1 = {};
 //   let countNum2 = {};
   
-//   for(let i = 0; i < strNum1.length; i++){
+//   for(let i = 0; i < strNum1.length; i++) {
 //     countNum1[strNum1[i]] = (countNum1[strNum1[i]] || 0) + 1
 //   }
   
