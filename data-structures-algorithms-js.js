@@ -173,7 +173,8 @@ var found = [5, 12, 8, 130, 44].find(function(element) {
 }); // 12
 
 // The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
-function findFirstLargeNumber(element) {
+function findFirstLargeNumber(element)
+{
   return element > 13;
 }
 
