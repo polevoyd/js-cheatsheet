@@ -126,7 +126,6 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
 Object.keys(obj);   // array of keys
 Object.values(obj);	// array of values
 
-
 'string'.trim(); // delete spaces on sides
 Number.isInteger(); // true of false
 parseInt('10'); // to Integer
@@ -206,7 +205,6 @@ array1.includes(2); // true
 
 // function validAnagram(first, second)
 // {
-
 //   if (first.length !== second.length)
 //   {
 //     return false;
