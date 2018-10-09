@@ -642,7 +642,7 @@ for (var key of myMap.keys()) { console.log(key); }				// 0 // 1
 for (var value of myMap.values()) { console.log(value); }			// zero // one
 for (var [key, value] of myMap.entries()) { console.log(key + ' = ' + value); } // 0 = zero // 1 = one
 
-myMap.forEach(function(value, key) { console.log(key + ' : ' + value); });	// "0 = zero" // "1 = one"
+myMap.forEach(function(value, key) { console.log(key + ' : ' + value); });	// "0 : zero" // "1 = one"
 
 // Extra
 let exist = myMap.has(key);
