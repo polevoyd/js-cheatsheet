@@ -77,14 +77,14 @@ a.forEach(element => console.log(element));	// print each element
 let s = 'Very cool string';
 
 // Slice O(N) (end-start)
-s.slice(2); // 'ry cool string'
-s.slice(2, 7); // 'ry co'
+s.slice(2);     // 'ry cool string'
+s.slice(2, 7);  // 'ry co'
 
 // Split
-s.split(''); // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
-s.split(' '); // ['Very', 'cool', 'string']
-s.split(' ', 2); // ['Very', 'cool']
-s.split('r'); // ["Ve", "y cool st", "ing"]
+s.split('');      // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
+s.split(' ');     // ['Very', 'cool', 'string']
+s.split(' ', 2);  // ['Very', 'cool']
+s.split('r');     // ["Ve", "y cool st", "ing"]
 
 // Splice
 s.splice(starting_index, amount_to_remove, what_to_put_instead);
@@ -618,7 +618,6 @@ class List
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 // MAP
 // ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
-
 // Insert	        O(1)
 // Access by Key	O(1)
 // Remove by Key	O(1)
@@ -642,7 +641,7 @@ for (var key of myMap.keys()) { console.log(key); }				// 0 // 1
 for (var value of myMap.values()) { console.log(value); }			// zero // one
 for (var [key, value] of myMap.entries()) { console.log(key + ' = ' + value); } // 0 = zero // 1 = one
 
-myMap.forEach(function(value, key) { console.log(key + ' : ' + value); });	// "0 : zero" // "1 = one"
+myMap.forEach(function(value, key) { console.log(key + ' : ' + value); });	// "0 : zero" // "1 : one"
 
 // Extra
 let exist = myMap.has(key);
