@@ -388,20 +388,10 @@ array1.includes(2); // true
 
 class List
 {
-  constructor()
-  {
+  constructor() {
     this.memory = [];
     this.length = 0;
   }
-
-  /**
-   * First we need a way to retrieve data from our list.
-   *
-   * With a plain list, you have very fast memory access because you keep track
-   * of the address directly.
-   *
-   * List access is constant O(1) - "AWESOME!!"
-   */
 
   get(address) {
     return this.memory[address];
