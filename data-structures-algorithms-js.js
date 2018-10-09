@@ -87,11 +87,11 @@ s.split(' ', 2); // ['Very', 'cool']
 s.split('r'); // ["Ve", "y cool st", "ing"]
 
 // Splice
-s.splice(startingIndex, amountToRemove, whatToPutInstead);
+s.splice(starting_index, amount_to_remove, what_to_put_instead);
 
 // SLICE
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-animals.slice(2); 		// ["camel", "duck", "elephant"]
+animals.slice(2); 		// ["camel", "duck", "elephant"] - slice from second element
 
 // SPLICE
 var months = ['Jan', 'March', 'April', 'June'];
