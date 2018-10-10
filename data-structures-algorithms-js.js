@@ -182,7 +182,7 @@ iterator1.next().value; // [1, "b"]
 [1, 2, 3, 4].flatMap(x => [[x * 2]]);	// [[2], [4], [6], [8]]
 
 // The includes() method determines whether an array includes a certain element, returning true or false as appropriate.
-array1.includes(2); // true
+[2, 4, 6, 7].includes(2); // true
 
 // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 ['ant', 'bison', 'camel', 'duck', 'bison'].indexOf('bison'); // 1
