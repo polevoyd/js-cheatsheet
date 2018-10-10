@@ -71,8 +71,6 @@ a.forEach(function(element, index, array){
   array[index] = element * 2; 			// will modify array in place
 });
 
-a.forEach(element => console.log(element));	// print each element
-
 // STRING
 let s = 'Very cool string';
 
