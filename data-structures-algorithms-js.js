@@ -53,7 +53,7 @@ let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp =  a.slice();
 
 //                     [1, 2, 3, 4, 5, 6, 7, 8, 9];
-a.reverse(); // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+a.reverse();  // [9, 8, 7, 6, 5, 4, 3, 2, 1]
 a.sort(); // [1, 2, 3, 4, 5, 6, 7, 8, 9] (sorting by first digit)
 a.join(); // '1,2,3,4,5,6,7,8,9'
 a.join(''); // '123456789'
@@ -66,8 +66,8 @@ let arr = [1, 2, 3, 4, 5 ];
 let [a, b, c, d, e] = arr;	// a = 1, b = 2, c = 3, d = 4, e = 5
 let {x, y, z} = object;		// will assign values
 
-// FOREACH - does not change array and return undefined
-a.forEach(function(element, index, array){
+
+a.forEach(function(element, index, array){  // FOREACH - does not change array and return undefined
   array[index] = element * 2; 			// will modify array in place
 });
 
@@ -84,7 +84,7 @@ s.split(' ');     // ['Very', 'cool', 'string']
 s.split(' ', 2);  // ['Very', 'cool']
 s.split('r');     // ["Ve", "y cool st", "ing"]
 
-// Splice
+// Splice - w
 s.splice(starting_index, amount_to_remove, what_to_put_instead);
 
 // SLICE 
