@@ -169,12 +169,7 @@ iterator1.next().value; // [1, "b"]
 }); // 12
 
 // The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise -1 is returned.
-function findFirstLargeNumber(element)
-{
-  return element > 13;
-}
-
-[5, 12, 8, 130, 44].findIndex(findFirstLargeNumber); // 3
+[5, 12, 8, 130, 44].findIndex(element => element > 13); // 3
 
 // The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 [1, 2, [3, 4]].flat(); // [1, 2, 3, 4]
