@@ -110,8 +110,8 @@ array1.concat(array2);		// return new array that is sum
 // .FILTER - FILTER values with a condition and return array of only ones that TRUE
 [12, 5, 8, 130, 44].filter( element => element > 5);
 
-// .MAP() - changing each element and return modified array
-const map1 = array.map(element => element * 2);
+
+array.map(element => element * 2);  // .MAP() - changing each element and return modified array
 
 // .REDUCE() - reducing array and return one element
 var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
