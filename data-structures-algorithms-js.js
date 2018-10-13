@@ -586,22 +586,6 @@ class List
 // // Size
 // unsigned int size = l.size();
 
-// // Iterate
-// for(std::list<int>::iterator it = l.begin(); it != l.end(); it++) {
-//     std::cout << *it << std::endl;
-// }
-
-// // Remove head, index, tail
-// l.pop_front();                  // head
-// l.erase(l.begin() + index);     // index
-// l.pop_back();                   // tail
-
-// // Clear
-// l.clear();
-
-// //---------------------------------
-// // Container-Specific Operations
-// //---------------------------------
 
 
 
