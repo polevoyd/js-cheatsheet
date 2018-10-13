@@ -565,26 +565,6 @@ class List
 // Remove Tail	O(1)
 // Find Index	O(n)
 // Find Object	O(n)
-// Example Code
-
-// std::list<int> l;
-
-// //---------------------------------
-// // General Operations
-// //---------------------------------
-
-// // Insert head, index, tail
-// l.push_front(value);                    // head
-// l.insert(l.begin() + index, value);     // index
-// l.push_back(value);                     // tail
-
-// // Access head, index, tail
-// int head = l.front();                                           // head
-// int value = std::list<int>::iterator it = l.begin() + index;    // index
-// int tail = l.back();                                            // tail
-
-// // Size
-// unsigned int size = l.size();
 
 
 
