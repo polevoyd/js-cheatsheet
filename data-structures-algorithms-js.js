@@ -603,28 +603,6 @@ class List
 // // Container-Specific Operations
 // //---------------------------------
 
-// // Splice: Transfer elements from list to list
-// //	splice(iterator pos, list &x)
-// //  	splice(iterator pos, list &x, iterator i)
-// //  	splice(iterator pos, list &x, iterator first, iterator last)
-// l.splice(l.begin() + index, list2);
-
-// // Remove: Remove an element by value
-// l.remove(value);
-
-// // Unique: Remove duplicates
-// l.unique();
-
-// // Merge: Merge two sorted lists
-// l.merge(list2);
-
-// // Sort: Sort the list
-// l.sort();
-
-// // Reverse: Reverse the list order
-// l.reverse();
-
-
 
 
 
