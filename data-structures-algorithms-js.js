@@ -418,15 +418,7 @@ class List
     this.length++;
   }
 
-  /**
-   * Next we need a way to "pop" items off of the end of our list.
-   *
-   * Similar to push all we need to do is remove the value at the address at
-   * the end of our list. Then just decrement length.
-   *
-   * Popping an item from the end of a list is constant O(1) - "AWESOME!!"
-   */
-
+  // O(1)
   pop() {
     // Don't do anything if we don't have any items.
     if (this.length === 0) return;
