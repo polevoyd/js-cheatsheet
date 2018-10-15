@@ -53,7 +53,7 @@ let subst = a.splice(index, amountOfElementsToRemove, whatToPutInstead);
 let temp =  a.slice();
 
 //                     [1, 2, 3, 4, 5, 6, 7, 8, 9];
-a.reverse();  // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+a.reverse(); // [9, 8, 7, 6, 5, 4, 3, 2, 1]
 a.sort(); // [1, 2, 3, 4, 5, 6, 7, 8, 9] (sorting by first digit)
 a.join(); // '1,2,3,4,5,6,7,8,9'
 a.join(''); // '123456789'
@@ -67,7 +67,7 @@ let [a, b, c, d, e] = arr;	// a = 1, b = 2, c = 3, d = 4, e = 5
 let {x, y, z} = object;		// will assign values
 
 
-a.forEach(function(element, index, array){  // FOREACH - does not change array and return undefined
+a.forEach(function(element, index, array){ // FOREACH - does not change array and return undefined
   array[index] = element * 2; 			// will modify array in place
 });
 
@@ -75,21 +75,21 @@ a.forEach(function(element, index, array){  // FOREACH - does not change array a
 let s = 'Very cool string';
 
 // Slice O(N) (end-start)
-s.slice(2);     // 'ry cool string'
-s.slice(2, 7);  // 'ry co'
+s.slice(2); // 'ry cool string'
+s.slice(2, 7); // 'ry co'
 
 // Split
-s.split('');      // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
-s.split(' ');     // ['Very', 'cool', 'string']
-s.split(' ', 2);  // ['Very', 'cool']
-s.split('r');     // ["Ve", "y cool st", "ing"]
+s.split(''); // ["V", "e", "r", "y", " ", "c", "o", "o", "l", " ", "s", "t", "r", "i", "n", "g"]
+s.split(' '); // ['Very', 'cool', 'string']
+s.split(' ', 2); // ['Very', 'cool']
+s.split('r'); // ["Ve", "y cool st", "ing"]
 
 // Splice - w
 s.splice(starting_index, amount_to_remove, what_to_put_instead);
 
 // SLICE - slice from some element element
 var animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-animals.slice(2); 		// ["camel", "duck", "elephant"] 
+animals.slice(2); 		// ["camel", "duck", "elephant"]
 
 // SPLICE
 ['Jan', 'March', 'April', 'June'].splice(1, 0, 'Feb');	// ['Jan', 'Feb', 'March', 'April', 'June']
@@ -110,7 +110,7 @@ array1.concat(array2);		// return new array that is sum
 [12, 5, 8, 130, 44].filter( element => element > 5);
 
 
-array.map(element => element * 2);  // .MAP() - changing each element and return modified array
+array.map(element => element * 2); // .MAP() - changing each element and return modified array
 
 // .REDUCE() - reducing array and return one element
 var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
@@ -120,7 +120,7 @@ var sum = [0, 1, 2, 3].reduce(function (accumulator, currentValue)
 
 
 // OBJECTS
-Object.keys(obj);   // array of keys
+Object.keys(obj); // array of keys
 Object.values(obj);	// array of values
 
 'string'.trim(); // delete spaces on sides
@@ -158,10 +158,10 @@ iterator1.next().value; // [1, "b"]
 
 // The fill() method fills all the elements of an array from a start index to an end index with a static value. The end index is not included.
 // fill with 0 from position 2 until position 4
-[1, 2, 3, 4].fill(0, 2, 4);	  // [1, 2, 0, 0]
+[1, 2, 3, 4].fill(0, 2, 4); // [1, 2, 0, 0]
 
 // fill with 5 from position 1
-[1, 2, 3, 4].fill(5, 1);      // [1, 5, 5, 5]
+[1, 2, 3, 4].fill(5, 1); // [1, 5, 5, 5]
 
 // The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned.
 [5, 12, 8, 130, 44].find(function(element) {
@@ -285,22 +285,22 @@ iterator1.next().value; // [1, "b"]
 //   let strNum1 = num1.toString();
 //   let strNum2 = num2.toString();
 //   if(strNum1.length !== strNum2.length) return false;
-  
+
 //   let countNum1 = {};
 //   let countNum2 = {};
-  
+
 //   for(let i = 0; i < strNum1.length; i++) {
 //     countNum1[strNum1[i]] = (countNum1[strNum1[i]] || 0) + 1
 //   }
-  
+
 //   for(let j = 0; j < strNum1.length; j++){
 //     countNum2[strNum2[j]] = (countNum2[strNum2[j]] || 0) + 1
 //   }
-  
+
 //   for(let key in countNum1){
 //     if(countNum1[key] !== countNum2[key]) return false;
 //   }
- 
+
 //   return true;
 // }
 // areThereDuplicates Solution (Frequency Counter)
@@ -411,21 +411,8 @@ class List
     return this.memory[address];
   }
 
-  /**
-   *   - Pop     - Remove a value from the end
-   *   - Unshift - Add value to the start
-   *   - Shift   - Remove a value from the start
-   *
-   * Starting with "push" we need a way to add items to the end of the list.
-   *
-   * It is as simple as adding a value in the address after the end of our
-   * list. Because we store the length this is easy to calculate. We just add
-   * the value and increment our length.
-   *
-   * Pushing an item to the end of a list is constant O(1) - "AWESOME!!"
-   */
-
-   // Add value to the end
+  // Add value to the end O(1)
+  // Just add value to a last position and increment size
   push(value) {
     this.memory[this.length] = value;
     this.length++;
