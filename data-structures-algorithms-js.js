@@ -412,13 +412,6 @@ class List
   }
 
   /**
-   * Because lists have an order you can insert stuff at the start, middle,
-   * or end of them.
-   *
-   * For our implementation, we're going to focus on adding and removing values
-   * at the start or end of our list with these four methods:
-   *
-   *   - Push    - Add value to the end
    *   - Pop     - Remove a value from the end
    *   - Unshift - Add value to the start
    *   - Shift   - Remove a value from the start
@@ -433,6 +426,7 @@ class List
    * Pushing an item to the end of a list is constant O(1) - "AWESOME!!"
    */
 
+   // Add value to the end
   push(value) {
     this.memory[this.length] = value;
     this.length++;
