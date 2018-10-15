@@ -415,8 +415,7 @@ class List
    *   - Pop     - Remove a value from the end
    *   - Unshift - Add value to the start
    *   - Shift   - Remove a value from the start
-   */
-  /*
+   *
    * Starting with "push" we need a way to add items to the end of the list.
    *
    * It is as simple as adding a value in the address after the end of our
