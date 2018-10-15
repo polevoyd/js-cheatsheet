@@ -434,15 +434,6 @@ class List
   }
 
   /**
-   * "push" and "pop" both operate on the end of a list, and overall are pretty
-   * simple operations because they don't need to be concerned with the rest of
-   * the list.
-   *
-   * Let's see what happens when we operate at the beginning of the list with
-   * "unshift" and "shift".
-   */
-
-  /**
    * In order to add a new item at the beginning of our list, we need to make
    * room for our value at the start by sliding all of the values over by one.
    *
