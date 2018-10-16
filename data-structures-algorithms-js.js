@@ -471,16 +471,6 @@ class List
   }
 }
 
-/**
- * Lists are great for fast access and dealing with items at the end. However,
- * as we've seen it isn't great at dealing with items not at the end of the
- * list and we have to manually hold onto memory addresses.
- *
- * So let's take a look at a different data structure and how it deals with
- * adding, accessing, and removing values without needing to know memory
- * addresses.
- */
-
 // 1.4 List std::list and std::forward_list
 
 // Time Complexity
