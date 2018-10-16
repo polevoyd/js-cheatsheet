@@ -433,24 +433,6 @@ class List
     return value;
   }
 
-  /**
-   * In order to add a new item at the beginning of our list, we need to make
-   * room for our value at the start by sliding all of the values over by one.
-   *
-   *     [a, b, c, d, e]
-   *      0  1  2  3  4
-   *       ⬊  ⬊  ⬊  ⬊  ⬊
-   *         1  2  3  4  5
-   *     [x, a, b, c, d, e]
-   *
-   * In order to slide all of the items over we need to iterate over each one
-   * moving the prev value over.
-   *
-   * Because we have to iterate over every single item in the list:
-   *
-   * Unshifting an item to the start of a list is linear O(N) - "OKAY."
-   */
-
   unshift(value) {
     // Store the value we are going to add to the start.
     let previous = value;
