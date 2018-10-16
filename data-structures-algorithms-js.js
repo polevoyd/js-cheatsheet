@@ -451,22 +451,6 @@ class List
     this.length++;
   }
 
-  /**
-   * Finally, we need to write a shift function to move in the opposite
-   * direction.
-   *
-   * We delete the first value and then slide through every single item in the
-   * list to move it down one address.
-   *
-   *     [x, a, b, c, d, e]
-   *         1  2  3  4  5
-   *       ⬋  ⬋  ⬋  ⬋  ⬋
-   *      0  1  2  3  4
-   *     [a, b, c, d, e]
-   *
-   * Shifting an item from the start of a list is linear O(N) - "OKAY."
-   */
-
   shift() {
     // Don't do anything if we don't have any items.
     if (this.length === 0) return;
