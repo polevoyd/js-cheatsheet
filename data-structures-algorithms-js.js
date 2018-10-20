@@ -412,7 +412,7 @@ class List
   }
 
   // Add value to the end O(1)
-  // Just add value to a last position and increment size
+
   push(value) {
     this.memory[this.length] = value;
     this.length++;
@@ -425,7 +425,7 @@ class List
 
     // Get the last value, stop storing it, and return it.
     let lastAddress = this.length - 1;
-    let value = this.memory[lastAddress];
+    let value = this.memory[lastAddress
     delete this.memory[lastAddress];
     this.length--;
 
