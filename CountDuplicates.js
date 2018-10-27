@@ -19,3 +19,21 @@ function sockMerchant(n, ar) {
 
     return duplicatedPairs;
 }
+
+// find first duplicate
+const firstDuplicate = (arr) =>
+{
+    // for finding duplicates easy to use a map 
+    // to count character and their occurences
+    // time: N, space: N
+    
+    let counter = {};
+    
+    for (let element of arr)
+            if (counter[element])
+                return element;
+            else
+                counter[element] = 1;  
+        
+    return -1;
+}
