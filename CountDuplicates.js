@@ -50,6 +50,12 @@ const firstNotRepeatingCharacter = (s) => {
     // filter unique values and return first one 
     // by compare firstIndexOf and lastIndexOf
     return [...s].filter((e, i, a) => [...s].lastIndexOf(e) === [...s].indexOf(e))[0] || '_' ;
+    
+    //     The find() method returns the value of the first element 
+    //     in the array that satisfies the provided testing function. 
+    //     Otherwise undefined is returned.
+    return [...s].find(e => s.indexOf(e) === s.lastIndexOf(e)) || '_'
+    
 }
 
 
