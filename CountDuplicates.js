@@ -15,11 +15,11 @@ function sockMerchant(n, ar) {
         } else {
             counter[ar[i]] = 1;
         }
-    }
 
     return duplicatedPairs;
 }
 
+/*********************************************************/
 // find first duplicate
 const firstDuplicate = (arr) =>
 {
@@ -36,4 +36,18 @@ const firstDuplicate = (arr) =>
                 counter[element] = 1;  
         
     return -1;
+}
+
+/*********************************************************/
+// Note: Write a solution that only iterates over the string once
+// and uses O(1) additional memory, // since this is what you would 
+// be asked to do during a real interview.
+
+// Given a string s, find and return the first instance of a 
+// non-repeating character in it. If there is no such character, return '_'
+
+const firstNotRepeatingCharacter = (s) => {
+    // filter unique values and return first one 
+    // by compare firstIndexOf and lastIndexOf
+    return [...s].filter((e, i, a) => [...s].lastIndexOf(e) === [...s].indexOf(e))[0] || '_' ;
 }
