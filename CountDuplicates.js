@@ -98,6 +98,11 @@ Note: Try to solve this task in-place (with O(1) additional memory), since this 
 
 You are given an n x n 2D matrix that represents an image. Rotate the image by 90 degrees (clockwise).
 */
+    /*
+    map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.
+
+callback is invoked with three arguments: the value of the element, the index of the element, and the Array object being traversed. [source]
+    */
     return matrix[0]
         .map((column, index) => (matrix.map(row => row[index])))
         .map(row => row.reverse());
